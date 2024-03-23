@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Teste03 {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite um número: ");
+        int num1 = scanner.nextInt();
+        
+        System.out.print("Digite outro número: ");
+        int num2 = scanner.nextInt();
+        
+        scanner.nextLine();
+        
+        System.out.print("Digite um operador ( + - * / ): ");
+        String operador = scanner.nextLine();
+        
+        int resultado;
+        
+        switch (operador) {
+            case "+": 
+                resultado = num1 + num2;
+                break;
+            case "-": 
+                resultado = num1 - num2;
+                break;
+            case "*": 
+                resultado = num1 * num2;
+                break;  
+            case "/": 
+                resultado = num1 / num2;
+                break;
+            default: 
+                resultado = 0;
+                System.out.print("Operador não reconhecido.");
+                break;
+        }
+        
+        System.out.print("O resultado é: " + resultado);
+        scanner.close();
+    }
+}
