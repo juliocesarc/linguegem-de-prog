@@ -1,0 +1,8 @@
+public class Teste11 {
+    public static void main(String[] args) {
+        String nomeCompleto = "Fulano de Tal";
+        String primeiroNome = nomeCompleto.split(" ")[0];
+
+        System.out.println("Primeiro nome: " + primeiroNome);
+    }
+}
