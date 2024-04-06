@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Teste13 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome de uma cidade: ");
+        String cidade = scanner.nextLine();
+
+        if (cidade.equals("Curitiba")) {
+            System.out.println("Você digitou Curitiba.");
+        } else {
+            System.out.println("Você não digitou Curitiba.");
+        }
+
+        scanner.close();
+    }
+}
