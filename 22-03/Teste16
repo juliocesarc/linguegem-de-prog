@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Teste16 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a primeira string: ");
+        String string1 = scanner.next();
+
+        System.out.print("Digite a segunda string: ");
+        String string2 = scanner.next();
+
+        System.out.print("Digite a terceira string: ");
+        String string3 = scanner.next();
+
+        String maiorString = string1;
+
+        if (string2.length() > maiorString.length()) {
+            maiorString = string2;
+        }
+        if (string3.length() > maiorString.length()) {
+            maiorString = string3;
+        }
+
+        System.out.println("A maior string é: " + maiorString);
+
+        scanner.close();
+    }
+}
