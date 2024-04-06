@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Teste07 {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+		System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+        
+        String classificacao = "";
+
+        
+        switch (numero) {
+            case 1: 
+                classificacao = "Final de semana";
+                break;
+            case 2: 
+                classificacao = "Dia útil";
+                break;
+            case 3: 
+                classificacao = "Dia útil";
+                break;  
+            case 4: 
+                classificacao = "Dia útil";
+                break;
+            case 5: 
+                classificacao = "Dia útil";
+                break;
+            case 6: 
+                classificacao = "Dia útil";
+                break;
+            case 7: 
+                classificacao = "Final de semana";
+                break;
+            default: 
+                classificacao = "De 1 a 7 rapaz!";
+                break;
+        }
+        
+        System.out.print(classificacao);
+        scanner.close();
+    }
+}
