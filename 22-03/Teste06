@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Teste06 {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+        
+        String classificacao = "";
+
+        if (numero == 0) {
+            classificacao = "O Número é zero";
+        } else if (numero < 0) {
+            classificacao = "O Número é negativo";
+        } else {
+            classificacao = "O Número é positivo";
+        }
+
+        System.out.println("Classificação: " + classificacao);
+
+        scanner.close();
+
+    }
+}
